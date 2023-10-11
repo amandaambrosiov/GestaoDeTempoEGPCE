@@ -6,7 +6,3 @@
         src="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2021/06/seplag-cinza.png" alt="Logo Seplag">
     </div>
   </footer>
-
-</body>
-
-</html>
