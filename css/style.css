@@ -1,6 +1,9 @@
 /* font relawey (para os conteúdos de textos dos parágrafos)  */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+/* OBS:
+A FUNÇÃO [data-theme="dark"] ALTERA O CONTEÚDO PARA O MODO ESCURO. */
+
 /* estilo do menu lateral (feito pelo audi) */
 
 
@@ -71,7 +74,18 @@ body {
     overflow-x: hidden;
 }
 
+/* aqui eu defini algumas propriedades que "ajudam" a nav a ficar animada --jayron-- */
+#navmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 4;
+}
+/* fim da nav animada */
 
+/* INÍCIO DAS CONFIGURAÇÕES DO MENU LATERAL */
 /* img logo da egp */
 #logo {
     width: 60px;
@@ -102,19 +116,6 @@ body {
     z-index: 999;
 }
 
-
-/* aqui eu defini algumas propriedades que "ajudam" a nav a ficar animada --jayron-- */
-
-#navmenu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    z-index: 4;
-}
-
-/* fim da nav animada */
 
 ul {
     list-style: none;
@@ -193,8 +194,6 @@ ul li.menu a:hover {
     width: 280px;
     z-index: 6;
 }
-
-
 /* ESTILO DO MENU RESPONSIVO */
 
 .offcanvas {
@@ -217,7 +216,6 @@ ul li.menu a:hover {
     bottom: 30%;
     color: #198754 !important;
 }
-
 
 /* MENU LATERAL RESPONSIVO CONTEÚDO */
 .offcanvas-body>.menulateral-responsivo>ul {
@@ -267,13 +265,13 @@ ul li.menu a:hover {
 
 [data-theme="dark"] .dropdown-container a {
     color: white;
-    
 }
 
 .dropdown-container a:hover {
     color: white;
     background-color: #1a9c60;
 }
+
 [data-theme="dark"] .dropdown-container a:hover {
     background-color: #3be3e2;
 }
@@ -306,7 +304,8 @@ ul li.menu a.ativo {
     color: rgb(192, 185, 185);
 }
 
-/* fim do estilo do menu lateral */
+/* FIM DAS CONFIGURAÇÕES DO MENU LATERAL */
+
 
 /* estilos gerais */
 
@@ -389,8 +388,7 @@ hr {
     background-color: var(--color-ciano);
 }
 
-/* estilo do accordion */
-
+/* INÍCIO DO ESTILO DO ACCORDION */
 .container {
     min-height: 20vh;
     position: relative;
@@ -659,6 +657,7 @@ o estado inicial de height 0 manteria o texto aparecendo */
     padding: 20px;
 }
 
+
 @media (max-width: 600px) {
     .accordion-content * {
         visibility: visible;
@@ -691,6 +690,8 @@ o estado inicial de height 0 manteria o texto aparecendo */
         margin-left: 0.5rem;
     }
 }
+/* FIM DO ESTILO DO ACCORDION */
+
 
 /* estilo da tabela */
 .table {
@@ -706,26 +707,14 @@ o estado inicial de height 0 manteria o texto aparecendo */
     padding: 1.5rem;
 }
 
-#progress-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 10px;
-    background: linear-gradient(#03cc65 0%, #03cc65 100%);
-    transition: width 0.5s ease-out;
-    z-index: 5;
-}
 
-footer {
-    margin-bottom: 15px;
-}
 
 .text-center .text {
     color: #b0b0b1;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ----------------------menu lateral responsivo --jayron-- ------------------------- */
+/* ---------------------- início do menu lateral responsivo --jayron-- ------------------------- */
 @media (min-width: 601px) {
 
     .offcanvas.hiding,
@@ -745,10 +734,6 @@ footer {
     .nav-link {
         display: none;
     }
-
-
-
-
     #img_logo {
         width: 150px;
     }
@@ -768,8 +753,10 @@ form {
         visibility: hidden;
     }
 }
+/* ---------------------- fim do menu lateral responsivo --jayron-- ------------------------- */
 
-/*BOTÃO DO MODO ESCURO (JAMILLE)*/
+
+/* INÍCIO DO BOTÃO DO MODO ESCURO */
 #btn_tema {
     display: flex;
     align-items: center;
@@ -791,8 +778,10 @@ form {
     transform: translateY(0.6px);
     box-shadow: 0px 0px 0px var(--color-ciano2);
 }
+/* FIM DO BOTÃO DO MODO ESCURO */
 
-/*CONFIGURAÇÃO DE ALGUNS ELEMENTOS NO MODO ESCURO (JAMILLE)*/
+
+/*CONFIGURAÇÃO DE ALGUNS ELEMENTOS NO MODO ESCURO */
 
 [data-theme="dark"] #btn_menu .fa-solid {
     color: var(--color-light-50);
@@ -866,17 +855,11 @@ h2,
     color: var(--color-light-50);
 }
 
-/* MODAL MODO ESCURO (Audi)*/
-/* [data-theme="dark"] .modal-content{
-    background-color: rgb(51, 51, 51);
-} */
-
 /* BOTÃO CLOSE MENU RESPONSIVO (Audi)*/
 [data-theme="dark"] .btn-close {
     filter: invert(1) grayscale(100%) brightness(200%);
 
 }
-
 /*FIM DA CONFIGURAÇÃO DO MODO ESCURO (JAMILLE)*/
 
 /* EFEITO DE ZOOM NA IMAGEM ADAPTADO (AUDI) */
@@ -901,11 +884,7 @@ h2,
     -webkit-transform: scale(1.2);
 }
 
-
-
-/* começo da questão de fixação */
-
-
+/* INÍCIO DAS CONFIGURAÇÕES DA QUESTÃO DE FIXAÇÃO */
 /* header da questão de fixação */
 #base {
     display: flex;
@@ -913,9 +892,7 @@ h2,
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 30px;
-
 }
-
 
 #puzzle {
     padding-right: 8px;
@@ -925,8 +902,6 @@ h2,
     color: #505050;
 }
 
-
-
 #titulo {
     font-weight: bolder;
     font-size: 20px;
@@ -934,6 +909,31 @@ h2,
 
 }
 
+.accordion-body {
+    background-color: rgb(196, 255, 252);
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    margin-left: 5px;
+    border: none;
+}
+
+h2.accordion-header {
+    padding-bottom: 0px;
+    border: none;
+
+}
+
+.accordion-item {
+    border: none;
+}
+
+[data-theme="dark"] .accordion-item {
+    background-color: var(--color-dark-100);
+}
 
 .accordion-button {
     background-color: #3ce4cb;
@@ -944,7 +944,6 @@ h2,
 .accordion-button::after {
     color: white;
 }
-
 
 /* começo da questão */
 
@@ -974,12 +973,6 @@ h2,
 
 }
 
-/* [data-theme="dark"] #botao-resposta{
-    background-color: var(--RoxoEscuroImportante);
-    color: white;
-   
-} */
-
 #grupo-botao {
     display: grid;
     justify-content: center;
@@ -990,45 +983,11 @@ h2,
 
 }
 
-/* [data-theme="dark"] #botao-resposta:hover{
-    background-color: #49158d;
-} */
-
-
 #titulo:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-.accordion-body {
-    background-color: rgb(196, 255, 252);
-    border-top: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    padding-left: 30px;
-    margin-left: 5px;
-    border: none;
-}
-
-/* [data-theme="dark"] .accordion-body{
-    background-color: var(--RoxoClaroImportante);
-} */
-
-h2.accordion-header {
-    padding-bottom: 0px;
-    border: none;
-
-}
-
-.accordion-item {
-    border: none;
-}
-
-[data-theme="dark"] .accordion-item {
-    background-color: var(--color-dark-100);
-}
 
 /* modal após resposta do usuário */
 /* ajeitei a responsividade  */
@@ -1052,8 +1011,6 @@ img#imagem-erro {
         }
     }
 }
-
-
 .imagem {
     text-align: center;
     margin-top: -50px;
@@ -1070,11 +1027,10 @@ img#imagem-erro {
 #header-modal {
     border-bottom: none;
 }
+/* FIM DAS CONFIGURAÇÕES DA QUESTÃO DE FIXAÇÃO */
 
-/* fim do modal */
 
-
-/* BUTTON BACK TO TOP (JAMILLE) */
+/* INÍCIO DO BUTTON BACK TO TOP (JAMILLE) */
 #back_to_top {
     position: fixed;
     z-index: 2;
@@ -1106,6 +1062,7 @@ img#imagem-erro {
     display: grid;
     place-items: center;
 }
+/* FIM DO BUTTON BACK TO TOP (JAMILLE) */
 
 .Texto {
     cursor: default;
@@ -1113,4 +1070,20 @@ img#imagem-erro {
 
 .Texto:hover {
     margin-left: 10px;
+}
+
+/* BARRA DE PROGRESSO  */
+#progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(#03cc65 0%, #03cc65 100%);
+    transition: width 0.5s ease-out;
+    z-index: 5;
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 15px;
 }
