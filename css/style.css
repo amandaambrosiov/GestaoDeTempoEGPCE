@@ -181,7 +181,7 @@ ul li.menu a:hover {
 
 /* (transition) no CONTEÚDO PRINCIPAL  */
 .all-conteudo {
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menulateral:hover~.all-conteudo {
