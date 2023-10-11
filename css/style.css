@@ -267,12 +267,15 @@ ul li.menu a:hover {
 
 [data-theme="dark"] .dropdown-container a {
     color: white;
+    
 }
 
 .dropdown-container a:hover {
-
     color: white;
     background-color: #1a9c60;
+}
+[data-theme="dark"] .dropdown-container a:hover {
+    background-color: #3be3e2;
 }
 
 .circulo {
