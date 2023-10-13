@@ -15,11 +15,11 @@
     <!-- link do wow.js -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- nosso css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- link do font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- link do script -->
-    <script src="js/script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
     <!-- link do scroollrevel -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Favicon -->
