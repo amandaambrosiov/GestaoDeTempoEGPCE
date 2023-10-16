@@ -115,8 +115,6 @@ body {
     transition: 0.3s;
     z-index: 999;
 }
-
-
 ul {
     list-style: none;
 }
@@ -129,14 +127,15 @@ ul li.menu a {
     color: #44833D;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 0%;
+    padding: 10px 0%;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     cursor: pointer;
     transition: 0.4s;
-    height: 50px;
+    height: fit-content;
     width: 100%;
+    /* border: 1px solid red; */
 }
 
 .menulateral ul {
@@ -148,7 +147,10 @@ ul li.menu a {
 
 ul li.menu a .txt {
     margin-left: 2.5rem;
-
+    display: flex;
+    text-align: left;
+    width: 100%;
+/* border: 1px solid red; */
 }
 
 @media screen {
@@ -193,7 +195,18 @@ ul li.menu a:hover {
 .menulateral:hover {
     width: 280px;
     z-index: 6;
+    overflow-y: auto;
 }
+.menulateral:hover::-webkit-scrollbar {
+    width: 7px;  
+  }
+.menulateral:hover::-webkit-scrollbar-track {
+    background: #EFF7F0; 
+  }
+.menulateral:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185); 
+    border-radius: 10px;
+  }
 /* ESTILO DO MENU RESPONSIVO */
 
 .offcanvas {
@@ -259,8 +272,7 @@ ul li.menu a:hover {
     padding-left: 1.2em;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
-    transition: color 0.5s linear;
-    transition: background-color 0.5s linear;
+    transition: background-color 0.3s linear;
 }
 
 [data-theme="dark"] .dropdown-container a {
@@ -281,7 +293,10 @@ ul li.menu a:hover {
 }
 
 .barra-sub {
-    margin-left: 10px;
+    margin-left: 53px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 [data-theme="dark"] ul li.menu a:hover {

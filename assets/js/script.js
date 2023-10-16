@@ -166,26 +166,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // barra de progresso embaixo - JS 
 
-const progressbar = document.querySelector('#progress-bar')
+// const progressbar = document.querySelector('#progress-bar')
 
-const section = document.querySelector('section')
+// const section = document.querySelector('section')
 
 /*fazer minha animação e scroll - barra de progresso*/
-const animateProgressBar = () => {
-    let scrollMouse = -section.getBoundingClientRect().top;
-    let progressWidth = (scrollMouse / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
+// const animateProgressBar = () => {
+//     let scrollMouse = -section.getBoundingClientRect().top;
+//     let progressWidth = (scrollMouse / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100;
 
-    let value = Math.floor(progressWidth)
-    console.log(value)
+//     let value = Math.floor(progressWidth)
+//     console.log(value)
 
-    progressbar.style.width = value + "%"
+//     progressbar.style.width = value + "%"
 
-    if (value < 0) {
-        progressbar.style.width = '0%'
-    }
-}
-window.addEventListener('scroll', animateProgressBar)
-animateProgressBar()
+//     if (value < 0) {
+//         progressbar.style.width = '0%'
+//     }
+// }
+// window.addEventListener('scroll', animateProgressBar)
+// animateProgressBar()
 
 // CORES DO MENU QUE MUDAM CONFORME O USUARIO MUDA DE PAG
 
