@@ -26,6 +26,7 @@ include('layout/header.php');
                     <div class="col-md-10 col-sm-8 container-fluid">
 
                         <h2 class="Titulo fw-bolder">A Gestão de Tempo</h2>
+
                         <!-- tirei o hr por que o menu não estava ficando sobreposto -->
                         <!-- <hr> -->
                         <div class="text-center img-01">
@@ -92,6 +93,31 @@ include('layout/header.php');
                             </div>
                         </section>
                         <hr>
+
+                        <!-- CAIXA DE TEXTO CURIOSIDADE -->
+                        <section class="container">
+                            <div class="accordion ">
+                                <section id="content">
+                                    <div class="caixaprincipal" id="tituloCuriosidade">
+                                        <div class="div_teste">
+                                            <div><i class="fa-solid fa-question"></i> CURIOSIDADE </div>
+
+                                            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+                                        </div>
+                                    </div> <!--caixa Principal-->
+                                    <div class="accordion-content" id="Curiosidade">
+                                        <p class="txt-aviso"><strong class="opacity-75"><strong class="opacity-75">
+                                                    Passe o mouse acima
+                                                </strong></strong></p>
+                                        <p class="txt-caixasecundaria">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Laudantium quis,
+                                            suscipit placeat unde labore, delectus aspernatur aperiam recusandae alias
+                                            beatae laboriosam nemo mollitia,
+                                            deleniti ea doloremque laborum id sed explicabo.</p><!--caixa secundaria-->
+                                    </div>
+                                </section>
+                        </section>
+                        <!-- FIM DA CAIXA DE TEXTO CURIOSIDADE -->
 
 
                         <p class="scrool">Note que cada ser humano possui exatamente a mesma
@@ -470,9 +496,9 @@ include('layout/header.php');
         </div>
     </div>
 
-<?php
-include('layout/footer.php');
-?>
+    <?php
+    include('layout/footer.php');
+    ?>
 </body>
 
 </html>

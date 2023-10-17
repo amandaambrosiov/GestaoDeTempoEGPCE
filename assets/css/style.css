@@ -589,9 +589,6 @@ hr {
     /*cor da caixa secundaria reflita */
 }
 
-[data-theme="dark"] #saibamais p {
-    color: #040504;
-}
 
 /* CAIXA CURIOSIDADES */
 .accordion #content .caixaprincipal#tituloCuriosidade {
@@ -601,10 +598,24 @@ hr {
     /*cor da palavra na caixa principal*/
 }
 
+#Curiosidade p {
+   color: black;
+    /*cor da caixa secundaria curiosidade */
+}
+
 #Curiosidade {
     background-color:#a02bf529 ;
     /*cor da caixa secundaria curiosidade */
 }
+
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloCuriosidade {
+    background-color: #33beaa;
+}
+
+[data-theme="dark"] #Curiosidade {
+    background-color: #ade7df;
+}
+
 /*  FIM CAIXA CURIOSIDADES */
 /* estilo do pointer dos accordion */
 
