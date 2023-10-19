@@ -811,7 +811,7 @@ o estado inicial de height 0 manteria o texto aparecendo */
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 735px) {
     .accordion-content * {
         visibility: visible;
     }
