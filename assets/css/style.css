@@ -3,15 +3,11 @@
 
 /* OBS:
 A FUNÇÃO [data-theme="dark"] ALTERA O CONTEÚDO PARA O MODO ESCURO. */
-<<<<<<< HEAD:css/style.css
-=======
-
-/* estilo do menu lateral (feito pelo audi) */
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
+/*
 
 /* estilo do menu lateral (feito pelo audi) */
 
-:root {
+:root{
     --CormenuLateral: #EFF7F0;
     --CorPreto: black;
     --CorBranca: white;
@@ -86,8 +82,6 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-<<<<<<< HEAD:css/style.css
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -113,19 +107,6 @@ body::-webkit-scrollbar-thumb {
 
 /* fim da nav animada */
 
-=======
-/* aqui eu defini algumas propriedades que "ajudam" a nav a ficar animada --jayron-- */
-#navmenu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    z-index: 4;
-}
-/* fim da nav animada */
-
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 /* INÍCIO DAS CONFIGURAÇÕES DO MENU LATERAL */
 /* img logo da egp */
 #logo {
@@ -156,10 +137,6 @@ body::-webkit-scrollbar-thumb {
     transition: 0.3s;
     z-index: 999;
 }
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 ul {
     list-style: none;
 }
@@ -221,11 +198,6 @@ ul li.menu a .txt {
     display: flex;
     text-align: left;
     width: 100%;
-<<<<<<< HEAD:css/style.css
-    /* border: 1px solid red; */
-=======
-/* border: 1px solid red; */
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 }
 
 @media screen {
@@ -273,7 +245,6 @@ ul li.menu a:hover {
     z-index: 6;
     overflow-y: auto;
 }
-<<<<<<< HEAD:css/style.css
 
 .menulateral:hover::-webkit-scrollbar {
     width: 7px;
@@ -288,7 +259,6 @@ ul li.menu a:hover {
     border-radius: 10px;
 }
 
-=======
 .menulateral:hover::-webkit-scrollbar {
     width: 7px;  
   }
@@ -299,7 +269,6 @@ ul li.menu a:hover {
     background-color: rgb(185, 185, 185); 
     border-radius: 10px;
   }
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 /* ESTILO DO MENU RESPONSIVO */
 
 .offcanvas {
@@ -690,8 +659,6 @@ hr {
     color: #fffffff6;
     /*cor da palavra na caixa principal*/
 }
-
-<<<<<<< HEAD:css/style.css
 /* CAIXA CURIOSIDADES */
 .accordion #content .caixaprincipal#tituloCuriosidade {
     background-color: #a042e5;
@@ -702,19 +669,8 @@ hr {
 
 #Curiosidade p {
     color: black;
-=======
-#Curiosidade p {
-   color: black;
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
-    /*cor da caixa secundaria curiosidade */
 }
-
 #Curiosidade {
-<<<<<<< HEAD:css/style.css
-    background-color: #a02bf529;
-=======
-    background-color:#a02bf529 ;
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
     /*cor da caixa secundaria curiosidade */
 }
 
@@ -727,10 +683,6 @@ hr {
 }
 
 /*  FIM CAIXA CURIOSIDADES */
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 /* estilo do pointer dos accordion */
 
 .accordion-content {
@@ -890,10 +842,6 @@ o estado inicial de height 0 manteria o texto aparecendo */
     .nav-link {
         display: none;
     }
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
     #img_logo {
         width: 150px;
     }
@@ -915,11 +863,6 @@ form {
 }
 /* ---------------------- fim do menu lateral responsivo --jayron-- ------------------------- */
 
-<<<<<<< HEAD:css/style.css
-/* ---------------------- fim do menu lateral responsivo --jayron-- ------------------------- */
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 
 /* INÍCIO DO BOTÃO DO MODO ESCURO */
 #btn_tema {
@@ -944,13 +887,6 @@ form {
     box-shadow: 0px 0px 0px var(--color-ciano2);
 }
 /* FIM DO BOTÃO DO MODO ESCURO */
-
-<<<<<<< HEAD:css/style.css
-/* FIM DO BOTÃO DO MODO ESCURO */
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
-
 /*CONFIGURAÇÃO DE ALGUNS ELEMENTOS NO MODO ESCURO */
 
 [data-theme="dark"] #btn_menu .fa-solid {
@@ -1202,10 +1138,6 @@ img#imagem-erro {
         }
     }
 }
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 .imagem {
     text-align: center;
     margin-top: -50px;
@@ -1222,13 +1154,6 @@ img#imagem-erro {
 #header-modal {
     border-bottom: none;
 }
-<<<<<<< HEAD:css/style.css
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
-/* FIM DAS CONFIGURAÇÕES DA QUESTÃO DE FIXAÇÃO */
-
-
 /* INÍCIO DO BUTTON BACK TO TOP (JAMILLE) */
 #back_to_top {
     position: fixed;
@@ -1284,11 +1209,6 @@ img#imagem-erro {
     z-index: 5;
 }
 
-<<<<<<< HEAD:css/style.css
-
-
-=======
->>>>>>> 3c57bd5ad0d932ef0c1ffe6347890fba1f1fbbd8:assets/css/style.css
 /* FOOTER */
 footer {
     margin-bottom: 15px;
