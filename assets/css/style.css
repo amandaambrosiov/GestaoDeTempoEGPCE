@@ -293,6 +293,18 @@ ul li.menu a:hover {
     right: 6%;
 }
 
+.offcanvas-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+    background: #EFF7F0;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+}
 
 .dropdown-btn {
     text-decoration: none;
@@ -316,6 +328,7 @@ ul li.menu a:hover {
 .dropdown-container a {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     text-decoration: none;
     color: #44833D;
     width: 100%;
