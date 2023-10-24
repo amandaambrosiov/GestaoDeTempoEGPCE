@@ -115,7 +115,7 @@ include('layout/header.php');
 
         <!-- Botões de navegação -->
         <div class="text-center">
-            <a href="topico01.html" class="btn btn-outline-success" role="button" aria-pressed="true">Próximo <i
+            <a href="topico01.php" class="btn btn-outline-success" role="button" aria-pressed="true">Próximo <i
                     class="bi bi-chevron-right"></i></a>
         </div>
 

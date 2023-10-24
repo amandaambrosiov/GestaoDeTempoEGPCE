@@ -68,43 +68,46 @@
           <nav class="menulateral-responsivo">
             <ul>
               <li class="menu">
-                <a href="index.html">
-                  <span class="icon space"><i class="bi bi-person-workspace"></i></span>
-                  <span class="txt">Apresentação</span>
-                </a>
-              </li>
-              <li class="menu">
-                <a href="topico01.html">
-                  <span class="icon"><i class="bi bi-1-circle"></i>
-                  </span>
-                  <span class="txt">Gestão de tempo</span>
+                <a href="index.php">
+                  <span class="icon "><i class="bi bi-person-workspace"></i></span>
+                  <span class="txt">Objetivos</span>
                 </a>
               </li>
 
+              <li class="menu">
+                <a href="topico01.php">
+                  <span class="icon "><i class="bi bi-1-circle"></i>
+                  </span>
+                  <span class="txt">Apresentação</i></span>
+                </a>
+              </li>
+
+              <!-- topico com Subtópico -->
               <button class="dropdown-btn">
                 <li class="menu">
-                  <a>
+                  <a data-valor="topico02.php">
                     <span class="icon space"><i class="bi bi-2-circle"></i></span>
-                    <span class="txt">Poder de decisão<i class="bi bi-caret-down-fill barra-sub"></i></span>
+                    <span class="txt">Usabilidade</span>
+                    <i class="bi bi-caret-down-fill barra-sub"></i>
                   </a>
                 </li>
               </button>
-              <div class="dropdown-container" id="spy">
-                <a href="topico02.html">
-                  <i class="fa-regular fa-pen-to-square circulo"></i>Inicío</a>
-                <a href="#item1">
-                  <i class="fa-regular fa-pen-to-square circulo"></i>Subtópico</a>
-
+              <!-- subtopicos aqui  -->
+              <div class="dropdown-container">
+                <a href="topico02.php">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>Início</a>
+                <a href="#item2.1">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>2.1 - NBR ISO 9241-11</a>
+                <a href="#item2.2">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>2.2 -ISO/IEC 25000 (SQuaRE)</a>
+                <a href="#item2.3">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>2.3 - Heurísticas de Nielsen</a>
+                <a href="#item2.4">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>2.4 - O que não é usual?</a>
               </div>
 
               <li class="menu">
-                <a href="topico03.html">
-                  <span class="icon"><i class="bi bi-3-circle"></i></span>
-                  <span class="txt">Planejamento de Metas</span>
-                </a>
-              </li>
-              <li class="menu">
-                <a href="referencias.html">
+                <a href="referencias.php">
                   <span class="icon"><i class="bi bi-book-half"></i></span>
                   <span class="txt">Referências</span>
                 </a>
@@ -199,10 +202,10 @@
   <h4 class="subsubtopico fw-bolder">Subsubtopico</h4>
   <!-- fim do subsubtopico  -->
 
-<!-- Parágrafo com a biblioteca de animação  -->
-<p class="scrool">
-</p>
-<!--  Fim do Parágrafo com a biblioteca de animação -->
+  <!-- Parágrafo com a biblioteca de animação  -->
+  <p class="scrool">
+  </p>
+  <!--  Fim do Parágrafo com a biblioteca de animação -->
 
   <!-- lista ordenada  -->
   <ol class="scrool" id="txt_final">
@@ -214,13 +217,12 @@
   <!-- lista  -->
 
   <ul class="list">
-    <li class="img-fluid wow fadeInLeft" data-wow-delay="0.3s"><i
-            class="fa fa-dot-circle text-success"></i>
-        Entender o que é usabilidade;
+    <li class="img-fluid wow fadeInLeft" data-wow-delay="0.3s"><i class="fa fa-dot-circle text-success"></i>
+      Entender o que é usabilidade;
     </li>
-</ul>
+  </ul>
 
-<!-- fim da lista  -->
+  <!-- fim da lista  -->
 
   <!-- Citação com borda verde (esquerda) -->
   <div class="bd-callout bd-callout-success m-3">
@@ -534,7 +536,6 @@
   <!-- FINAL DA QUESTÃO DE FIXAÇÃO-->
 
   <!-- INÍCIO DAS CONFIGURAÇÕES DO BOTÃO BACK TO TOP -->
-
   <!-- BOTÃO BACK TO TOP COM UMA BARRA DE PROGRESSO -->
   <div id="back_to_top">
     <div id="btn_back">

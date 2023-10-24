@@ -59,12 +59,12 @@
 
 // fim do código do menu lateral
 
-//BOTÃO BACK TO TOP (JAMILLE)
+//BOTÃO BACK TO TOP
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("back_to_top")
     let progressValue = document.getElementById("btn_back")
     let pos = document.documentElement.scrollTop
-    let calcHeight = document.documentElement.scrollHeight-document.documentElement.clientHeight
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
     let scrollValue = Math.round((pos * 100) / calcHeight)
 
     if (pos > 100) {
@@ -99,7 +99,7 @@ window.addEventListener("scroll", function () {
 })
 
 
-//MODO ESCURO (JAMILLE)
+//MODO ESCURO 
 const btnDarkModeToggle = document.getElementById('btn_tema')
 const icon = document.getElementById('icone')
 const themeSystem = localStorage.getItem('themeSystem') || 'light'
@@ -132,7 +132,7 @@ function defineCurrentTheme(theme) {
 }
 
 defineCurrentTheme(themeSystem)
-//FIM DA FUNÇÃO MODO ESCURO (JAMILLE)
+//FIM DA FUNÇÃO MODO ESCURO 
 
 // script do ScrollReveal
 document.addEventListener('DOMContentLoaded', function () {
@@ -141,15 +141,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ScrollReveal para a página de apresentação
     sr.reveal('.main-content', { duration: 1000 });
-//    sr.reveal('#para01', { duration: 1000 });
-//     sr.reveal('#para02', { duration: 1000 });
+    //    sr.reveal('#para01', { duration: 1000 });
+    //     sr.reveal('#para02', { duration: 1000 });
 
     // ScrollReveal para a página do módulo 01
     sr.reveal('#img-1', { duration: 1000 });
-    
+
     // Correção do seletor para o título (exemplo com h1)
     sr.reveal('h1', { duration: 1000 });
-    
+
     sr.reveal('.bd-callout', { duration: 1000 });
     sr.reveal('.none', { duration: 1000 });
     // Adicione outros seletores e efeitos conforme necessário
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sr.reveal('.accordion', { duration: 1000 });
 
     sr.reveal('iframe', { duration: 1000 });
-    
+
     // Certifique-se de incluir este código no local apropriado em sua página HTML
 });
 
@@ -189,13 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // CORES DO MENU QUE MUDAM CONFORME O USUARIO MUDA DE PAG
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const currentPage = window.location.pathname.split("/").pop();
     const links = document.querySelectorAll(".menu a");
 
     links.forEach(link => {
         const href = link.getAttribute("href");
-        if (href === currentPage || link.getAttribute("data-valor")=== currentPage) {
+        if (href === currentPage || link.getAttribute("data-valor") === currentPage) {
             link.classList.add("ativo");
         }
     });
@@ -204,21 +204,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // teste do menu lateral
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+// var dropdown = document.getElementsByClassName("dropdown-btn");
+// var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
+// for (i = 0; i < dropdown.length; i++) {
+//     dropdown[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
+//         var dropdownContent = this.nextElementSibling;
+//         if (dropdownContent.style.display === "block") {
+//             dropdownContent.style.display = "none";
+//         } else {
+//             dropdownContent.style.display = "block";
+//         }
+//     });
+// }
 
+// SUBTÓPICO COM JQUERY
+$(document).ready(function () {
+  
+    // Adicione um evento de clique a todos os botões de dropdown
+    $(".dropdown-btn").click(function (event) {
+        // Encontre o conteúdo de dropdown associado a este botão
+        var dropdown = $(this).next('.dropdown-container');
 
- 
+        // Exiba ou oculte o dropdown associado ao botão clicado
+        dropdown.toggle();
 
+        //    fecha o dropdown no evento "mouseleave" na ul "dropDown"
+        $('.menulateral').mouseleave(function () {
+            dropdown.slideUp();
+        });
+    });
+});
+
+// FIM DO SUBTÓPICO COM JQUERY
