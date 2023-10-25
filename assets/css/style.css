@@ -175,8 +175,8 @@ ol li {
 ul li.menu a {
     color: #44833D;
     text-decoration: none;
-    font-size: 20px;
-    padding: 20px 0%;
+    font-size: 23px;
+    padding: 18px 0%;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -184,7 +184,6 @@ ul li.menu a {
     transition: 0.1s;
     height: fit-content;
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 .menulateral ul {
@@ -234,13 +233,12 @@ ul li.menu a:hover {
 
 /* (transition) no CONTEÚDO PRINCIPAL  */
 .all-conteudo {
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .menulateral:hover~.all-conteudo {
     margin-left: 100px;
 }
-
 
 .menulateral:hover {
     width: 280px;
@@ -293,6 +291,10 @@ ul li.menu a:hover {
     right: 6%;
 }
 
+.offcanvas-body{
+    overflow-x: hidden;
+}
+
 .offcanvas-body::-webkit-scrollbar {
     width: 7px;
 }
@@ -317,8 +319,8 @@ ul li.menu a:hover {
     outline: none;
 }
 
-.dropdown-btn:hover {
-    color: #ffffff;
+.dropdown-btn .menu:hover {
+    color: white;
 }
 
 .dropdown-container {
@@ -332,14 +334,13 @@ ul li.menu a:hover {
     text-decoration: none;
     color: #44833D;
     width: 100%;
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 0.7rem;
     cursor: pointer;
     position: relative;
     padding-left: 1.2em;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
-    transition: background-color 0.3s linear;
 }
 
 [data-theme="dark"] .dropdown-container a {
@@ -349,6 +350,7 @@ ul li.menu a:hover {
 .dropdown-container a:hover {
     color: white;
     background-color: #1a9c60;
+    height: auto;
 }
 
 [data-theme="dark"] .dropdown-container a:hover {
@@ -376,7 +378,7 @@ ul li.menu a.ativo {
 }
 
 [data-theme="dark"] ul li.menu a.ativo {
-    border-right: 5px solid #1ab6b6;
+    border-right: 6px solid #1ab6b6;
 }
 
 [data-theme="dark"] .dropdown-toggle {
@@ -843,6 +845,10 @@ o estado inicial de height 0 manteria o texto aparecendo */
         color: rgb(39, 79, 35);
     }
 
+    ul li.menu a.ativo {
+        border-right: 6px solid #44833D;
+    }
+
     .nav-link {
         display: none;
     }
@@ -995,7 +1001,7 @@ h2,
 
 }
 
-/*FIM DA CONFIGURAÇÃO DO MODO ESCURO (JAMILLE)*/
+/*FIM DA CONFIGURAÇÃO DO MODO ESCURO*/
 
 /* EFEITO DE ZOOM NA IMAGEM ADAPTADO (AUDI) */
 .zoom {
@@ -1011,6 +1017,8 @@ h2,
     transition: all 0.3s;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
+    border: 7px solid rgba(0, 0, 0, 0.062);
+    border-top: 0;
 }
 
 .zoom:hover img {
