@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // teste do menu lateral
 
-// var dropdown = document.getElementsByClassName("dropdown-btn");
+// var d/ropdown = document.getElementsByClassName("dropdown-btn");
 // var i;
 
 // for (i = 0; i < dropdown.length; i++) {
@@ -227,8 +227,9 @@ $(document).ready(function () {
         // Encontre o conteúdo de dropdown associado a este botão
         var dropdown = $(this).next('.dropdown-container');
 
-        // Exiba ou oculte o dropdown associado ao botão clicado
-        dropdown.toggle();
+        dropdown.stop(true,true).slideToggle();
+
+         event.stopPropagation();
 
         //    fecha o dropdown no evento "mouseleave" na ul "dropDown"
         $('.menulateral').mouseleave(function () {
@@ -236,4 +237,5 @@ $(document).ready(function () {
         });
     });
 });
+
 // FIM DO SUBTÓPICO COM JQUERY
