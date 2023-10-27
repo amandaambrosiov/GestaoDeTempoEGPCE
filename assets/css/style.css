@@ -175,8 +175,8 @@ ol li {
 ul li.menu a {
     color: #44833D;
     text-decoration: none;
-    font-size: 23px;
-    padding: 18px 0%;
+    font-size: 21px;
+    padding: 10px 0%;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -291,7 +291,7 @@ ul li.menu a:hover {
     right: 6%;
 }
 
-.offcanvas-body{
+.offcanvas-body {
     overflow-x: hidden;
 }
 
@@ -334,7 +334,7 @@ ul li.menu a:hover {
     text-decoration: none;
     color: #44833D;
     width: 100%;
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 0.7rem;
     cursor: pointer;
     position: relative;
