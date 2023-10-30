@@ -690,7 +690,36 @@ hr {
     background-color: #ade7df;
 }
 
-/*  FIM CAIXA CURIOSIDADES */
+/*  FIM CAIXA CURIOSIDADE */
+
+
+/* CAIXA DUVIDA */
+.accordion #content .caixaprincipal#tituloDuvida {
+    background-color: #2A8C82;
+    /*cor da caixa principal curiosidade*/
+    color: #fffffff6;
+    /*cor da palavra na caixa principal*/
+}
+
+#Duvida p {
+    color: black;
+    /*cor da caixa secundaria curiosidade */
+}
+
+#Duvida {
+    background-color: #4bd3c5c4;
+    /*cor da caixa secundaria curiosidade */
+}
+
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloDuvida {
+    background-color: #33beaa;
+}
+
+[data-theme="dark"] #Duvida {
+    background-color: #ade7df;
+}
+
+/*  FIM CAIXA DÚVIDA */
 
 /* estilo do pointer dos accordion */
 
