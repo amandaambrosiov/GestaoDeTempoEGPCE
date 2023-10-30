@@ -103,6 +103,7 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
     background-color: #ffffff;
     z-index: 4;
+    transition: 0.5s;
 }
 
 /* fim da nav animada */
