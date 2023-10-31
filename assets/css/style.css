@@ -235,10 +235,13 @@ ul li.menu a:hover {
 /* (transition) no CONTEÚDO PRINCIPAL  */
 .all-conteudo {
     transition: 0.1s;
+    
 }
 
 .menulateral:hover~.all-conteudo {
     margin-left: 100px;
+    display: flex;
+    text-align: justify;
 }
 
 .menulateral:hover {
